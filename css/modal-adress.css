@@ -1,0 +1,154 @@
+.modal__adress {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(116, 99, 121, 0.5); 
+    backdrop-filter: blur(200px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal__adress-wrapper {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1800px;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.modal__adress-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.close__adress {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.adress__content {
+    display: flex;
+}
+
+.modal__left {
+    flex: 1;
+    background-color: #AE97E8;
+    border-top-left-radius: 20px;
+    padding: 83px 181px 78px 83px;
+}
+
+.adress__maps {
+    width: 100%;
+    height: 337px;
+    overflow: hidden;
+}
+
+.modal__text-adress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 535px;
+}
+
+.modal__text-citys {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 51px;
+    text-align: left;
+}
+
+.modal__text-city1, .modal__text-city2 {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.modal__text-adress-maps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.modal__text-adress-map1 {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+
+.modal__text-adress-map2 {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.text-adress-map2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 39px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.text-adress-map2 img {
+    width: 20px;
+    height: 20px;
+}
+
+.modal__right {
+    flex: 1;
+    background-color: #FA8FEF;
+    border-top-right-radius: 20px;
+    padding: 83px 83px 50px 83px;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal__form input, .modal__form textarea {
+    padding: 13px;
+    margin-top: 13px;
+    border-bottom: 2px solid #D9FF5A;
+}
+
+input::placeholder {
+    color: #fff; 
+    opacity: 1; 
+}
+
+textarea {
+    text-transform: uppercase;
+    background: none;
+    border: none;
+}
+
+textarea::placeholder {
+    color: #fff; 
+    opacity: 1; 
+}
+
+.btn-adress {
+    margin-top: 33px;
+}
+
+.modal__form button {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

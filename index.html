@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/modal-adress.css">
+    <link rel="stylesheet" href="./css/modal-sign.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="stylesheet" href="./css/catalog-btn.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Product Showcase</title>
+</head>
+
+<body>
+    <div class="modal__adress" id="modalAdress">
+        <div class="modal__adress-wrapper">
+            <div class="modal__adress-content">
+                <span class="close__adress">&times;</span>
+                <div class="adress__content">
+                    <div class="modal__left">
+                        <div class="modal__text-adress">
+                            <p>Адрес</p>
+                            <p>Телефон</p>
+                        </div>
+                        <div class="modal__text-citys">
+                            <div class="modal__text-city1">
+                                <h2>Москва</h2>
+                                <p>Хохловский переулок д. 11, стр. 3</p>
+                            </div>
+                            <div class="modal__text-city2">
+                                <span>+7 (495) 621-26-17</span>
+                                <span>Ответим на все вопросы</span>
+                            </div>
+                        </div>
+                        <div class="modal__text-adress-maps">
+                            <div class="modal__text-adress-map1">
+                                <p>Адрес на карте</p>
+                                <div>↓</div>
+                            </div>
+                            <ul class="modal__text-adress-map2">
+                                <li class="text-adress-map2"><img src="./img/cib_telegram-plane.png" alt=""></li>
+                                <li class="text-adress-map2"><img src="./img/Vector.png" alt=""></li>
+                                <li class="text-adress-map2"><img src="./img/cib_linkedin-in.png" alt=""></li>
+                                <li class="text-adress-map2"><img src="./img/Vector (1).png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal__right">
+                        <form class="modal__form">
+                            <h2>Форма обратной связи</h2>
+                            <input type="email" placeholder="E-mail" required>
+                            <textarea placeholder="Сообщение" rows="1" required></textarea>
+                            <div class="main__info-buy btn-adress">
+                                <button class="buy">Отправить</button>
+                                <svg class="ovals" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="100" cy="50" rx="120" ry="45" stroke="#d4ff00" stroke-width="2"
+                                        fill="rgba(235, 227, 255, 0.5)" transform="rotate(-5,120,50)" />
+                                </svg>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="adress__maps">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A0b597bf5ace8ff451693d796918d224202ee95db4ffe83f0e4bcf7bcdb2af925&amp;source=constructor"
+                        width="1800" height="537" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__nav">
+                <h1 class="logo">Elfen lied</h1>
+                <nav class="header__navig">
+                    <ul class="nav__items">
+                        <div class="nav__items-left">
+                            <div class="ellipse">
+                                <div class="ellipse__items">
+                                    <div class="ellipse__item-top">
+                                        <div class="ellipse__item1"></div>
+                                        <div class="ellipse__item"></div>
+                                    </div>
+                                    <div class="ellipse__item-bottom">
+                                        <div class="ellipse__item1"></div>
+                                        <div class="ellipse__item"></div>
+                                    </div>
+                                </div>
+                                <li class="nav__item">Каталог</li>
+                            </div>
+                            <div class="nav__items-map">
+                                <li class="nav__item">Блог</li>
+                                <li class="nav__item"><a href="#" id="openModalAdress">Контакты</a></li>
+                            </div>
+                        </div>
+                        <div class="nav__item-search">
+                            <img src="./img/search.png" alt="Поиск">
+                            <input class="nav__item-input" type="text" placeholder="Поиск">
+                        </div>
+                        <div class="nav__item-categories">
+                            <img class="nav__item-search-pos" src="./img/search.png" alt="Поиск">
+                            <img src="./img/heart-header.png" alt="Лайк">
+                            <button href="#" id="openModalSign"><img src="./img/профиль.png" alt="Аккаунт"></button>
+                            <button href="#" id="openModalSign2"><img src="./img/профиль.png" alt="Аrккаунт"></button>
+                            <img src="./img/корзина.png" alt="Корзина">
+                            <img class="tel" src="./img/Vectortel.png" alt="Телефон">
+                        </div>
+                    </ul>
+                </nav>
+                <div class="modal__sign" id="modalSign">
+                    <div class="modal__sign-wrapper">
+                        <div class="modal__sign-content">
+                            <span class="close__sign">&times;</span>
+                            <div class="sign__content">
+                                <form class="modal__form sign">
+                                    <h2>Вход</h2>
+                                    <input type="email" placeholder="E-mail" required>
+                                    <input type="password" placeholder="Пароль" required>
+                                    <div class="main__info-buy btn-adress">
+                                        <button class="buy">Войти</button>
+                                        <svg class="ovals" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                                            <ellipse cx="100" cy="50" rx="120" ry="45" stroke="#d4ff00" stroke-width="2"
+                                                fill="rgba(235, 227, 255, 0.5)" transform="rotate(-5,120,50)" />
+                                        </svg>
+                                    </div>
+                                    <div class="sign__reg">
+                                        <a href="#">нет аккаунта?</a>
+                                        <a href="#" id="openModalReg">Регистрация &#8594;</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__reg" id="modalReg">
+                    <div class="modal__reg-wrapper">
+                        <div class="modal__reg-content">
+                            <span class="close__reg">&times;</span>
+                            <div class="reg__content">
+                                <form class="modal__form reg">
+                                    <h2>Вход</h2>
+                                    <input type="email" placeholder="E-mail" required>
+                                    <input type="password" placeholder="Пароль" required>
+                                    <input type="password" placeholder="Повторите пароль" required>
+                                    <div class="main__info-buy btn-adress">
+                                        <button class="buy">Регистрация</button>
+                                        <svg class="ovals" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                                            <ellipse cx="100" cy="50" rx="120" ry="45" stroke="#d4ff00" stroke-width="2"
+                                                fill="rgba(235, 227, 255, 0.5)" transform="rotate(-5,120,50)" />
+                                        </svg>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container__main container">
+            <div class="main__info">
+                <div class="main__left">
+                    <h2 class="main__title">товар дня</h2>
+                    <h2 class="main__title-info">Benjamin Moore</h2>
+                    <div class="main__info-items1">
+                        <div class="main__info-item">
+                            <h2 class="main__info-item-title">Santa Trinita</h2>
+                            <p class="main__info-item-text">Функциональная дизайнерская <br> лампа для создания
+                                максимально
+                                комфортного освещения</p>
+                            <div class="line"></div>
+                            <p class="main__info-item-price">150 000 ₽</p>
+                        </div>
+                        <div class="main__info-buy">
+                            <button class="buy">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    stroke="#D9FF5A">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+                                            stroke="" d9ff5a"="" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                                Купить
+                            </button>
+                            <svg class="ovals" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="100" cy="50" rx="120" ry="40" stroke="#d4ff00" stroke-width="2" fill="none"
+                                    transform="rotate(0,100,50)" />
+                                <ellipse cx="100" cy="50" rx="120" ry="40" stroke="#d4ff00" stroke-width="2"
+                                    fill="rgba(235, 227, 255, 0.5)" transform="rotate(-15,100,50)" />
+                            </svg>
+                        </div>
+                    </div>
+                    <img class="main__info-img" src="./img/лампа.png" alt="">
+                </div>
+                <div class="main__right">
+                    <div class="main__info-items2">
+                        <div class="main__info-item1" id="item1">
+                            <img src="./img/Frame 1321314734.png" alt="">
+                            <div class="main__info-item-col">
+                                <span class="main__info-item-col-text">слайд</span><br><br><br>
+                                <span class="main__info-item-col-num">02</span>
+                            </div>
+                        </div>
+                        <div class="main__info-item2" id="item2">
+                            <img src="./img/Frame 1321314735.png" alt="">
+                            <div class="main__info-item-col">
+                                <span class="main__info-item-col-text">слайд</span><br><br><br>
+                                <span class="main__info-item-col-num">03</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__catalog">
+                <h2 class="main__catalog-title">Категории</h2>
+                <div class="catalog__info">
+                    <div class="catalog__egg">
+                        <div class="egg"></div>
+                        <img class="egg__img" src="./img/зеркало.png" alt="">
+                        <div class="egg__quantity-con">
+                            <p class="egg__quantity">4 <span class="egg__quantity-text">шт</span></p>
+                        </div>
+                        <div class="egg__texts">
+                            <svg width="260" height="200" viewBox="0 0 200 200">
+                                <defs>
+                                    <path id="curve" d="M 10,100 Q 100,20 280,100" />
+                                </defs>
+                                <text class="egg__text">
+                                    <textPath href="#curve">изготовление на заказ</textPath>
+                                </text>
+                            </svg>
+                        </div>
+                        <h2 class="egg__title">напольные зеркала</h2>
+                        <button class="egg__button">↓</button>
+                    </div>
+                    <div class="catalog__egg">
+                        <div class="egg"></div>
+                        <img class="egg__img" src="./img/Frame 1321314752.png" alt="">
+                        <div class="egg__quantity-con">
+                            <p class="egg__quantity">4 <span class="egg__quantity-text">шт</span></p>
+                        </div>
+                        <div class="egg__texts">
+                            <svg width="260" height="200" viewBox="0 0 200 200">
+                                <defs>
+                                    <path id="curve" d="M 10,100 Q 100,20 280,100" />
+                                </defs>
+                                <text class="egg__text">
+                                    <textPath href="#curve">изготовление на заказ</textPath>
+                                </text>
+                            </svg>
+                        </div>
+                        <h2 class="egg__title">торшеры <br> и лампы</h2>
+                        <button class="egg__button">↓</button>
+                    </div>
+                    <div class="catalog__egg">
+                        <div class="egg"></div>
+                        <img class="egg__img" src="./img/Frame 1321314764.png" alt="">
+                        <div class="egg__quantity-con">
+                            <p class="egg__quantity">4 <span class="egg__quantity-text">шт</span></p>
+                        </div>
+                        <div class="egg__texts">
+                            <svg width="260" height="200" viewBox="0 0 200 200">
+                                <defs>
+                                    <path id="curve" d="M 10,100 Q 100,20 280,100" />
+                                </defs>
+                                <text class="egg__text">
+                                    <textPath href="#curve">изготовление на заказ</textPath>
+                                </text>
+                            </svg>
+                        </div>
+                        <h2 class="egg__title">кресла <br> и стулья</h2>
+                        <button class="egg__button">↓</button>
+                    </div>
+                    <div class="catalog__egg">
+                        <div class="egg"></div>
+                        <img class="egg__img" src="./img/Frame 1321314772.png" alt="">
+                        <div class="egg__quantity-con">
+                            <p class="egg__quantity">4 <span class="egg__quantity-text">шт</span></p>
+                        </div>
+                        <div class="egg__texts">
+                            <svg width="260" height="200" viewBox="0 0 200 200">
+                                <defs>
+                                    <path id="curve" d="M 10,100 Q 100,20 280,100" />
+                                </defs>
+                                <text class="egg__text">
+                                    <textPath class="egg__text" href="#curve">изготовление на заказ</textPath>
+                                </text>
+                            </svg>
+                        </div>
+                        <h2 class="egg__title">столы <br> и тумбы</h2>
+                        <button class="egg__button">↓</button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__list">
+                <div class="catalog__item">
+                    <img src="./img-catt/Frame 1321314759.png" alt="Товар 1">
+                    <h3>Kristin</h3>
+                    <p>Зеркало напольное</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/tall-flower-form-modern-mirror-light-blue-color-wh.png" alt="Товар 2">
+                    <h3>Arlene</h3>
+                    <p>Зеркало напольное</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/tall-sun-form-modern-mirror-light-blue-color-white.png" alt="Товар 3">
+                    <h3>Colleen</h3>
+                    <p>Зеркало напольное</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/tall-flower-form-modern-mirror-light-blue-color-wh (1).png" alt="Товар 4">
+                    <h3>coppelia</h3>
+                    <p>Зеркало напольное</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/tall-wave-form-modern-mirror-light-lavender-color- (1).png" alt="Товар 5">
+                    <h3>artemide</h3>
+                    <p>Зеркало напольное</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__list">
+                <div class="catalog__item">
+                    <img src="./img-catt/sophisticated-unusual-modern-high-lamp-wave-form-- (1).png" alt="Товар 1">
+                    <h3>Aubrey</h3>
+                    <p>Лампа настольная</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/sophisticated-unusual-modern-high-lamp-tree-form--.png" alt="Товар 2">
+                    <h3>Leslie</h3>
+                    <p>Лампа настольная</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/sophisticated-unusual-modern-high-lamp-wave-form-- (3) 1.png" alt="Товар 3">
+                    <h3>Darrell</h3>
+                    <p>Лампа настольная</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/sophisticated-unusual-modern-high-lamp-wave-form-- (2).png" alt="Товар 4">
+                    <h3>coppelia</h3>
+                    <p>Лампа настольная</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/sophisticated-unusual-modern-high-lamp-wave-form--.png" alt="Товар 5">
+                    <h3>artemide</h3>
+                    <p>Лампа настольная</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__list">
+                <div class="catalog__item">
+                    <img src="./img-catt/sophisticated-unusual-modern-high-chair-wave-form- (1).png" alt="Товар 1">
+                    <h3>Aubrey</h3>
+                    <p>Лампа настольная</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/sophisticated-unusual-modern-high-chair-wave-form-.png" alt="Товар 2">
+                    <h3>Leslie</h3>
+                    <p>Лампа настольная</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/tall-unusual-modern-chair-light-lavender-color-whi (1).png" alt="Товар 3">
+                    <h3>Darrell</h3>
+                    <p>Лампа настольная</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/Subtract.png" alt="Товар 4">
+                    <h3>coppelia</h3>
+                    <p>Лампа настольная</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="/.img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/unusual-modern-high-chair-wave-form.png" alt="Товар 5">
+                    <h3>artemide</h3>
+                    <p>Лампа настольная</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__list">
+                <div class="catalog__item">
+                    <img src="./img-catt/elongated-form-tall-modern-table-light-blue-color- (2).png" alt="Товар 1">
+                    <h3>Kathryn</h3>
+                    <p>Лампа настольная</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/unusual-modern-high-wide-wave-glowing-light-table- (1).png" alt="Товар 2">
+                    <h3>Wendy</h3>
+                    <p>Лампа настольная</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/unusual-modern-tall-wide-wave-glowing-light-table- 1.png" alt="Товар 3">
+                    <h3>Judith</h3>
+                    <p>Лампа настольная</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/unusual-modern-high-wide-wave-glowing-light-table- (2) 1.png" alt="Товар 4">
+                    <h3>Jane</h3>
+                    <p>Лампа настольная</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="./img-catt/wide-form-hight-modern-table-light-lavender-color- (2).png" alt="Товар 5">
+                    <h3>Darlene</h3>
+                    <p>Лампа настольная</p>
+                    <hr>
+                    <div class="catalog__item-buy">
+                        <span class="price">150 000 ₽</span>
+                        <div class="catalog__item-buy-text">
+                            <img src="./img-catt/vuesax_bold_shopping-cart.png" alt="Корзина">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__sale">
+                <div class="sale__info">
+                    <div class="sale__info-speed">CREATING A GREAT ART <span class="sale__star">✦</span> CREATING A
+                        GREAT ART <span class="sale__star">✦</span> CREATING A GREAT ART <span
+                            class="sale__star">✦</span>CREATING A GREAT ART <span class="sale__star">✦</span> CREATING A
+                        GREAT ART <span class="sale__star">✦</span> CREATING A GREAT ART <span
+                            class="sale__star">✦</span>CREATING A GREAT ART <span class="sale__star">✦</span> CREATING A
+                        GREAT ART <span class="sale__star">✦</span> CREATING A GREAT ART <span
+                            class="sale__star">✦</span>CREATING A GREAT ART <span class="sale__star">✦</span> CREATING A
+                        GREAT ART <span class="sale__star">✦</span> CREATING A GREAT ART <span
+                            class="sale__star">✦</span></div>
+                </div>
+                <div class="sale__info">
+                    <div class="sale__info-speed">CREATING A GREAT ART <span class="sale__star">✦</span> CREATING A
+                        GREAT ART <span class="sale__star">✦</span> CREATING A GREAT ART <span class="sale__star">✦
+                        </span>CREATING A GREAT ART <span class="sale__star">✦</span> CREATING A
+                        GREAT ART <span class="sale__star">✦</span> CREATING A GREAT ART <span
+                            class="sale__star">✦</span>CREATING A GREAT ART <span class="sale__star">✦</span> CREATING A
+                        GREAT ART <span class="sale__star">✦</span> CREATING A GREAT ART <span
+                            class="sale__star">✦</span>CREATING A GREAT ART <span class="sale__star">✦</span> CREATING A
+                        GREAT ART <span class="sale__star">✦</span> CREATING A GREAT ART <span
+                            class="sale__star">✦</span></div>
+                </div>
+            </div>
+            <div class="main__blog">
+                <div class="blog__title">
+                    <div class="blog__title-info">
+                        <div class="swiper-pagination"></div>
+                        <h2 class="blog__title-text">Блог</h2>
+                    </div>
+                    <div class="blog__title-number">
+                        <span>02</span>
+                        <div class="blog__line"></div>
+                        <span>04</span>
+                    </div>
+                </div>
+                <div class="blog__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="blog-texts">
+                                <div class="blog-texts-nums">
+                                    <span class="blog-texts-num">01</span>
+                                    <span>Laura <br> Busche</span>
+                                </div>
+                                <h3 class="blog-text-title">Новая коллекция кресел</h3>
+                                <p class="blog-text">14 января <br> 2023</p>
+                            </div>
+                            <img src="./img/Mask group (2).png" alt="Диван">
+                            <div class="date-circle">3 <br> <span class="date-circle-text">мин</span></div>
+                            <div class="visible-circle"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-texts">
+                                <div class="blog-texts-nums">
+                                    <span class="blog-texts-num">02</span>
+                                    <span>Laura <br> Busche</span>
+                                </div>
+                                <h3 class="blog-text-title">Световой дизайн <br> в интерьере</h3>
+                                <p class="blog-text">14 января <br> 2023</p>
+                            </div>
+                            <img src="./img/Mask group (1).png" alt="Люстра">
+                            <div class="date-circle">3 <br> <span class="date-circle-text">мин</span></div>
+                            <div class="visible-circle"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-texts">
+                                <div class="blog-texts-nums">
+                                    <span class="blog-texts-num">03</span>
+                                    <span>Laura <br> Busche</span>
+                                </div>
+                                <h3 class="blog-text-title">Как выбрать шкаф <br> в спальню</h3>
+                                <p class="blog-text">14 января <br> 2023</p>
+                            </div>
+                            <img src="./img/Mask group.png" alt="Шкаф">
+                            <div class="date-circle">3 <br> <span class="date-circle-text">мин</span></div>
+                            <div class="visible-circle"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-texts">
+                                <div class="blog-texts-nums">
+                                    <span class="blog-texts-num">01</span>
+                                    <span>Laura <br> Busche</span>
+                                </div>
+                                <h3 class="blog-text-title">Новая коллекция кресел</h3>
+                                <p class="blog-text">14 января <br> 2023</p>
+                            </div>
+                            <img src="./img/Mask group (2).png" alt="Диван">
+                            <div class="date-circle">3 <br> <span class="date-circle-text">мин</span></div>
+                            <div class="visible-circle"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-texts">
+                                <div class="blog-texts-nums">
+                                    <span class="blog-texts-num">02</span>
+                                    <span>Laura <br> Busche</span>
+                                </div>
+                                <h3 class="blog-text-title">Световой дизайн <br> в интерьере</h3>
+                                <p class="blog-text">14 января <br> 2023</p>
+                            </div>
+                            <img src="./img/Mask group (1).png" alt="Люстра">
+                            <div class="date-circle">3 <br> <span class="date-circle-text">мин</span></div>
+                            <div class="visible-circle"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-texts">
+                                <div class="blog-texts-nums">
+                                    <span class="blog-texts-num">03</span>
+                                    <span>Laura <br> Busche</span>
+                                </div>
+                                <h3 class="blog-text-title">Как выбрать шкаф <br> в спальню</h3>
+                                <p class="blog-text">14 января <br> 2023</p>
+                            </div>
+                            <img src="./img/Mask group.png" alt="Шкаф">
+                            <div class="date-circle">3 <br> <span class="date-circle-text">мин</span></div>
+                            <div class="visible-circle"></div>
+                        </div>
+                    </div>
+                </div>
+    </main>
+    <footer class="footer">
+        <div class="container__footer container">
+            <div class="footer__info">
+                <span>@2025</span>
+                <span>Все права защищены</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

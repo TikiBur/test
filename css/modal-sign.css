@@ -1,0 +1,85 @@
+.modal__sign {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 77px;
+    width: 610px;
+    height: 516px;
+    background: rgba(116, 99, 121, 0.5); 
+    backdrop-filter: blur(50px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 20px;
+}
+
+.close__sign {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.modal__form .sign {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.sign input, .sign textarea {
+    width: 522px;
+    padding: 13px;
+    margin-top: 40px;
+    border-bottom: 2px solid #D9FF5A;
+    text-transform: uppercase;
+}
+
+.sign__reg {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    text-transform: uppercase;
+    margin-top: 68px;
+}
+
+/* REG */
+
+.modal__reg {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 77px;
+    width: 610px;
+    height: 516px;
+    background: rgba(116, 99, 121, 0.5); 
+    backdrop-filter: blur(50px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 20px;
+}
+
+.close__reg {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.modal__form .reg {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.reg input, .reg textarea {
+    width: 522px;
+    padding: 13px;
+    margin-top: 40px;
+    border-bottom: 2px solid #D9FF5A;
+    text-transform: uppercase;
+}
