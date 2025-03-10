@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'Floreste'; 
-    src: url('./fonts/FloresteWavy.otf');
+    src: url('./fonts/FloresteWavy.woff');
 }
 
 @font-face {
     font-family: 'Le_Murmure'; 
-    src: url('./fonts/Le_Murmure-Regular_web.ttf');
+    src: url('./fonts/Le_Murmure-Regular_web.woff');
 }
 
 @font-face {
     font-family: 'Euclid'; 
-    src: url('./fonts/Euclid\ Circular\ A\ Bold\ Italic.ttf');
+    src: url('./fonts/Euclid\ Circular\ A\ Bold\ Italic.woff');
 }
 
 @font-face {
     font-family: 'Gilroy'; 
-    src: url('./fonts/Gilroy-ExtraBold.otf');
+    src: url('./fonts/Gilroy-ExtraBold.woff');
 }
 
 html {
